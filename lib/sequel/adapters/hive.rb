@@ -13,7 +13,8 @@ module Sequel
       end
       
       def dataset(opts = nil)
-        Hive::Dataset.new(self, opts)
+        #Hive::Dataset.new(self, opts)
+        Hive::Dataset.new(self)
       end
     
       def execute(sql, opts={})
